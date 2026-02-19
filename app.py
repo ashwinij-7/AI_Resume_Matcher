@@ -1,5 +1,5 @@
 import streamlit as st
-from resume_matcher import load_resume, calculate_similarity
+from resume_matcher_semantic import load_resume, calculate_similarity
 import os  
 
 st.title("🧠 AI Resume Matcher")
@@ -22,3 +22,4 @@ if uploaded_resume and job_description:
     # ✅ Cleanup temp file safely here
     if os.path.exists(temp_filename):
         os.remove(temp_filename)
+
